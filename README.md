@@ -1,4 +1,4 @@
-# Opus2mp3
+# Convert2mp3
 This began as a opus 2 mp3 project and is now a fully functional ffmpeg converter.
 
 WARNING: You must have python and ffmpeg!
