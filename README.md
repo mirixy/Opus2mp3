@@ -1,18 +1,30 @@
 # Opus2mp3
-Convert opus files to mp3 with ffmpeg
+This began as a opus 2 mp3 project and is now a fully functional ffmpeg converter.
 
-Hello, this is my little Script to Convert all Opus Files in the Music Folder to mp3 through the ffmpeg Codec.
-Since ffmpeg is almost as default installed in Linux Distributions, it will mostly work.
-If needed you can install ffmpeg and use then the script.
+WARNING: You must have python and ffmpeg!
 
-Maybe you need to make the .sh file executeable with
+Convert files to mp3 with ffmpeg
 
-"sudo chmod +x opustomp3.sh"
+Hello, this is my little Python Script that converts your Media Files to mp3.
+It works with the ffmpeg Codec. Since it is almost standard in Linux Systems, it will work out of the Box.
 
-You can execute this File as a normal User, just type ./opustomp3.sh and let the magic happen.
+If ffmpeg isn't installed you can easily install it with your PackageManager.
 
-Note: You can change the Directory or Fileformat by editing the file.
-if you want to convert mp4 to mp3 you have to change *.opus to *.mp4 and %opus/mp3 to %mp4/mp3!
+NOTE: The Folder where this programm seeks your files is the "Music" Folder in your Home directory.
+If your System-Language is German, your Folder might be "Musik" , so in Order to use this program, you have to change the converter.py file.
+Obviously you have to change "Music" with your destination.
+
+Maybe i will rewrite the Code, that you can choose your destination Folder. I could do a seperate Version to do so.
+
+You might ask what format you can convert. Please visit the ffmpeg wiki for informations: https://ffmpeg.org/ffmpeg.html#Video-and-Audio-file-format-conversion
+
+Examples: opus ogg mp4 flac
+
+How does this program work?
+
+Just type in your terminal : ./converter.py
+Then it will ask you which format do you want to convert.
+After your input, the magic begins.
 
 Thank you and don't forget: make Life easy! :)
 
