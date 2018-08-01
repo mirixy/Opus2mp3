@@ -1,1 +1,6 @@
-for a in ~/Music/*.opus; do  ffmpeg -i "$a" -qscale:a 0 "${a[@]/%opus/mp3}"; done
+#!/bin/bash
+
+
+for a in ~/Music/*.opus;
+do  ffmpeg -hide_banner -i "$a" -qscale:a 0 "${a[@]/%opus/mp3}";
+done
